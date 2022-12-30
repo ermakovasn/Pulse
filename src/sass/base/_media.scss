@@ -1,4 +1,4 @@
-@media (max-width: 575px) {
+@media (max-width: 575px) {  
 .header {
     &__logo {
         img {
@@ -15,8 +15,6 @@
         width: 133px;
     }
 }
-}
-
 .promo {
     &__header {
         font-weight: 700;
@@ -62,4 +60,5 @@
         font-size: 20px;
         width: 310px;
     }
+}
 }
