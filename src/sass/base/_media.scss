@@ -27,13 +27,12 @@
         text-align: center;
     }
     &__wrapper {
-
         align-items: center;
     }
     &__icons {
         width: 318px;
     }
-    .button__main {
+    .button_main {
         width: 260px;
         margin: 67px auto;
     }
@@ -60,5 +59,24 @@
         font-size: 20px;
         width: 310px;
     }
+}
+.consultation {
+    display: flex;
+    align-items: center;
+    .title_left {
+        font-size: 33px;
+        line-height: 40px;
+        padding-left: 10px;
+    }
+    &__descr {
+        padding-left: 10px;
+    }
+    .feed-form {
+        margin: 36px auto;
+        input {
+            width: 100%;
+        }
+    }
+
 }
 }
