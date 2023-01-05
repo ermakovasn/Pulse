@@ -6,7 +6,7 @@
         width: 750px;
         margin: 0 auto;
     }
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         top: 50%;
         border: none;
@@ -18,10 +18,26 @@
             height: 50px;
         }       
     }
-    .slick-next {
+    .next {
         right: -66px;
         left: auto;
         // если нужно выключить лефт ставим в позицию авто
     }
+
+    // если используем tiny slider
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    // чтобы застилизовать кнопки
+    // .tns-nav {
+    //     background-color: red;
+    // }
+    // кнопка активного слайдера будет подсвечиваться синим цветом
+    //         .tns-nav-active {
+    //             background-color: blue;
+    // }
 }
 
