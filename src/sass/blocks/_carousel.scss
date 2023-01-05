@@ -6,7 +6,7 @@
         width: 750px;
         margin: 0 auto;
     }
-    .prev, .next {
+    .slick-prev, .slick-next {
         position: absolute;
         top: 50%;
         border: none;
@@ -18,19 +18,19 @@
             height: 50px;
         }       
     }
-    .next {
+    .slick-next {
         right: -66px;
         left: auto;
         // если нужно выключить лефт ставим в позицию авто
     }
-
+}
     // если используем tiny slider
-    .tns-item {
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
+    // .tns-item {
+    //     img {
+    //         display: block;
+    //         margin: 0 auto;
+    //     }
+    // }
     // чтобы застилизовать кнопки
     // .tns-nav {
     //     background-color: red;
@@ -39,5 +39,5 @@
     //         .tns-nav-active {
     //             background-color: blue;
     // }
-}
+
 
