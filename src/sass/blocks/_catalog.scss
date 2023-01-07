@@ -1,0 +1,185 @@
+.catalog {
+    padding-bottom: 100px;
+    &__tabs {
+        margin-top: 70px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab {
+        width: 222px;
+        height: 52px;
+        border: 2px solid #D0D0D0;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        line-height: 48px;
+        // чтобы трансформировать блоки под наклоном
+        transform: skewX(-25deg);
+        // чтобы поставить отступ 10рх, но не было перекоса в одну сторону 
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            // чтобы добавить тень при наведении: 1-по оси х, 2-по оси у, 3-размытие, 4-цвет
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+    &__content {
+        margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        // чтобы все не помещающиеся карточки скидывались на новую строку
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+    }
+    &-item {
+        width: 303px;
+        min-height: 442px;
+        border: 2px solid #e8e8e8;
+        padding: 20px 20px 26px 20px;
+        // чтобы скрыть контент, который выходит за рамки блока
+        overflow: hidden;
+        margin-bottom: 20px;
+        &__img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__descr {
+            margin-top: 16px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__link {
+            display: block;
+            margin-top: 17px;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: $main-color;
+            text-transform: uppercase;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        hr {
+            background-color: #e8e8e8;
+            margin-top: 19px;
+            margin-bottom: 21px;
+            // чтобы полосочка была не 2рх, а 1 рх
+            border-bottom: none;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__old-price {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &__price {
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+        }
+        &__wrapper {
+            display: flex;
+            // добавили марджины справа и слева итого 40рх
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transition: 0.5s all;
+            // как только класс активности у него будет убираться, мы будем убирать его влево на 100%
+            transform: translateX(-100%);
+            &_active {
+                // он будет стоять на своем месте
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            padding-right: 20px;
+            transition: 0.5s all;
+            transform: translateX(0%);
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+            &_active {
+                // обратная логика
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li {
+                position: relative;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                margin-bottom: 20px;
+                // для создания квадратиков перед описанием, обязательно нужно их абсолютно спозиционировать и назначить контент, иначе не сработает
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+        }
+            &__back {
+                position: absolute;
+                left: 50%;
+                transform: translateX(calc(-50% - 19px));
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                text-decoration-line: underline;
+                color: $main-color;
+                text-transform: uppercase;
+                bottom: 0;
+                &:hover {
+                    color: $main-color;
+                }    
+            }
+    }
+}
