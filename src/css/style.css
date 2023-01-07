@@ -316,6 +316,32 @@
   .consultation .feed-form input {
     width: 100%;
   }
+  .carousel ul.slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .carousel button {
+    color: #C70101;
+  }
+  .catalog {
+    width: auto;
+  }
+  .catalog ul {
+    margin-top: 22px;
+  }
+  .catalog ul li {
+    font-size: 9px;
+    width: 87px;
+    line-height: none;
+  }
+  .catalog-item {
+    margin: 5px auto;
+  }
 }
 .consultation {
   min-height: 680px;
@@ -376,7 +402,7 @@
 }
 .carousel__inner {
   position: relative;
-  width: 750px;
+  width: 75%;
   margin: 0 auto;
 }
 .carousel .slick-prev, .carousel .slick-next {

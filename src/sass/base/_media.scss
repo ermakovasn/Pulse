@@ -77,6 +77,31 @@
             width: 100%;
         }
     }
-
 }
+.carousel {
+    ul.slick-dots {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    button {
+        color: $main-color;
+    }
+}
+.catalog {
+    width: auto;
+    ul {
+        margin-top: 22px;
+        li {
+            font-size: 9px;
+            width: 87px;
+            line-height: none;
+        }
+    }
+    &-item {
+        margin: 5px auto;
+    }
+}
+
 }
