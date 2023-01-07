@@ -27,7 +27,8 @@
     }
     &__icons {
     display: flex;
-    flex-direction: space-between;
+    justify-content: end;
+    align-items: baseline;
     margin-top: 65px;
     width: 425px;
     }

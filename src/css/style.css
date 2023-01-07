@@ -47,10 +47,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: space-between;
-          flex-direction: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-top: 65px;
   width: 425px;
 }
@@ -402,7 +404,7 @@
 }
 .carousel__inner {
   position: relative;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 .carousel .slick-prev, .carousel .slick-next {
