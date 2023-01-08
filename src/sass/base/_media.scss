@@ -86,7 +86,10 @@
         padding-left: 0;
     }
     button {
-        color: $main-color;
+        color: black;
+        background-color: black;
+        width: 22px;
+        height: 22px;
     }
 }
 .catalog {
@@ -104,4 +107,28 @@
     }
 }
 
+.feedback {
+    min-height: min-content;
+    padding: 0 10px 49px 10px;
+    &__wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    &__item {
+        flex-direction: column;
+        img {
+            margin: 20px auto;
+        }
+    }
+    &__text {
+        padding: 0 10px;
+    }
+    &__subtitle {
+        text-align: center;
+        }
+    &__count {
+        text-align: center;
+    }
+    }
 }
+

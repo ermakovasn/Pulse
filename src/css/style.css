@@ -235,116 +235,6 @@
   text-decoration: underline;
 }
 
-@media (max-width: 575px) {
-  .header__logo img {
-    width: 80%;
-  }
-  .header__official {
-    display: none;
-  }
-  .header__phone {
-    font-size: 14px;
-  }
-  .header .button {
-    width: 133px;
-  }
-  .promo__header {
-    font-weight: 700;
-    font-size: 25px;
-    margin: 20px auto;
-  }
-  .promo__subheader {
-    font-size: 15px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .promo__wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .promo__icons {
-    width: 318px;
-  }
-  .promo .button_main {
-    width: 260px;
-    margin: 67px auto;
-  }
-  .promo__link {
-    margin-top: -46px;
-  }
-  .advantages {
-    padding: 30px 0 65px 0;
-  }
-  .advantages h2.title {
-    font-size: 24px;
-  }
-  .advantages__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 10px;
-  }
-  .advantages__item {
-    margin: 20px auto;
-  }
-  .advantages__subtitle {
-    font-size: 22px;
-  }
-  .advantages__descr {
-    font-size: 20px;
-    width: 310px;
-  }
-  .consultation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .consultation .title_left {
-    font-size: 33px;
-    line-height: 40px;
-    padding-left: 10px;
-  }
-  .consultation__descr {
-    padding-left: 10px;
-  }
-  .consultation .feed-form {
-    margin: 36px auto;
-  }
-  .consultation .feed-form input {
-    width: 100%;
-  }
-  .carousel ul.slick-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    list-style-type: none;
-    padding-left: 0;
-  }
-  .carousel button {
-    color: #C70101;
-  }
-  .catalog {
-    width: auto;
-  }
-  .catalog ul {
-    margin-top: 22px;
-  }
-  .catalog ul li {
-    font-size: 9px;
-    width: 87px;
-    line-height: none;
-  }
-  .catalog-item {
-    margin: 5px auto;
-  }
-}
 .consultation {
   min-height: 680px;
   background: url(../img/second_bg.png) center center/cover no-repeat;
@@ -631,4 +521,195 @@
 }
 .catalog-item__back:hover {
   color: #C70101;
+}
+
+.feedback {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  padding: 0 130px 49px 99px;
+}
+.feedback__wrapper {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: flex-start;
+}
+.feedback__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+.feedback__item img {
+  width: 169px;
+  height: 169px;
+}
+.feedback__text {
+  padding: 0 60px;
+}
+.feedback__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0D0D0D;
+}
+.feedback__count {
+  font-weight: 500;
+  font-size: 14px;
+  color: #646464;
+}
+.feedback__descr {
+  padding-top: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0D0D0D;
+}
+
+@media (max-width: 575px) {
+  .header__logo img {
+    width: 80%;
+  }
+  .header__official {
+    display: none;
+  }
+  .header__phone {
+    font-size: 14px;
+  }
+  .header .button {
+    width: 133px;
+  }
+  .promo__header {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 20px auto;
+  }
+  .promo__subheader {
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .promo__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .promo__icons {
+    width: 318px;
+  }
+  .promo .button_main {
+    width: 260px;
+    margin: 67px auto;
+  }
+  .promo__link {
+    margin-top: -46px;
+  }
+  .advantages {
+    padding: 30px 0 65px 0;
+  }
+  .advantages h2.title {
+    font-size: 24px;
+  }
+  .advantages__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .advantages__item {
+    margin: 20px auto;
+  }
+  .advantages__subtitle {
+    font-size: 22px;
+  }
+  .advantages__descr {
+    font-size: 20px;
+    width: 310px;
+  }
+  .consultation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .consultation .title_left {
+    font-size: 33px;
+    line-height: 40px;
+    padding-left: 10px;
+  }
+  .consultation__descr {
+    padding-left: 10px;
+  }
+  .consultation .feed-form {
+    margin: 36px auto;
+  }
+  .consultation .feed-form input {
+    width: 100%;
+  }
+  .carousel ul.slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .carousel button {
+    color: black;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+  }
+  .catalog {
+    width: auto;
+  }
+  .catalog ul {
+    margin-top: 22px;
+  }
+  .catalog ul li {
+    font-size: 9px;
+    width: 87px;
+    line-height: none;
+  }
+  .catalog-item {
+    margin: 5px auto;
+  }
+  .feedback {
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    padding: 0 10px 49px 10px;
+  }
+  .feedback__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .feedback__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback__item img {
+    margin: 20px auto;
+  }
+  .feedback__text {
+    padding: 0 10px;
+  }
+  .feedback__subtitle {
+    text-align: center;
+  }
+  .feedback__count {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
