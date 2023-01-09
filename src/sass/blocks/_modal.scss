@@ -1,0 +1,51 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    // чтобы увидеть модальное окно
+    top: 0;
+    // чтобы придать прозрачность заднему фону, но не сделать прозрачной саму форму
+    background-color: rgba(0,0,0, .56);
+}
+.modal {
+    // чтобы окно стояло по центру экрана
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // комбинированное свойство и по Х и по У (так как модальное окно имеет свою ширину)
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 403px;
+    background-color: #f2f2f2;
+    padding: 38px 40px 40px 40px;
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        font-size: 41px;
+        line-height: 21px;
+        color: $main-color;
+        cursor: pointer;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &_mini {
+        min-height: 140px;
+    }
+}
+
+#consultation, #order, #thanks {
+    display: none;
+}

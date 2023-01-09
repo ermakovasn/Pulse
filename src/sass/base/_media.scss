@@ -130,5 +130,28 @@
         text-align: center;
     }
     }
+.footer {
+    &__info {
+        width: 100%;
+        padding: 50px 10px 60px 10px;
+        height: 235px;
+    }
+    &__map {
+        height: 400px;
+    }
+    &__addr {
+        font-size: 18px;
+    }
+    &__phone {
+        font-size: 18px;
+    }
+}
+.modal {
+    width: 310px;
+    padding: 30px 5px 5px 5px;
+    &__close {
+        right: 0px;
+    }
+}
 }
 

@@ -9,6 +9,9 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover {
+        box-shadow: 2px 0 5px #FFFFFF;
+    }
     &_main {
         width: 303px;
         height: 54px;
@@ -25,5 +28,6 @@
         width: 135px;
         height: 44px;
         font-size: 14px;
+        cursor: pointer;
     }
 }

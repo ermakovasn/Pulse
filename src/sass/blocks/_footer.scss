@@ -43,6 +43,9 @@
         img {
             height: 27px;
         }
+        &:hover {
+            box-shadow: 5px 0 5px #FFFFFF;
+        }
     }
     &__social {
         display: flex;

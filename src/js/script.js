@@ -66,6 +66,23 @@ $(document).ready(function(){
       };
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
+
+      // модальные окна. fadeOut() - команда, которая позволяет красиво анимированно скрыть элементы со стр
+      // при клике на кнопку с дата-атрибутом консультация, мы сначала вызываем оверлэй-задний фон, затем по айди вызываем форму
+      $('[data-modal=consultation]').on('click', function(){
+          $('.overlay, #consultation').fadeIn('slow');
+      });
+      // оживляем крестик (закрыть окно при нажатии)
+      $('.modal__close').on('click',function(){
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+      });
+      // чтобы в карточке отображалось название товара, которое покупатель собирается заказать
+      $('.button_mini').each(function(i) {
+        $(this).on('click', function(){
+          $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+          $('.overlay, #order').fadeIn('slow');
+        });
+      });
   });
 
 // tiny-slider
