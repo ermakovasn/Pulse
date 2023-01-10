@@ -116,7 +116,60 @@ $(document).ready(function(){
 		validateForms('#consultation-form');
 		validateForms('#consultation form');
 		validateForms('#order form');
-	});
+
+		$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+		// отправка данных с сайта на почту
+	// 	$('form').submit(function(e) {
+	// 		// отменяем стандартное поведение браузера, чтобы страница не перезагружалась при отправке формы
+	// 		e.preventDefault();
+
+	// 		// чтобы не было возможности отправить пустую функцию
+	// 		if(!$(this).valid()) {
+	// 			return;
+	// 		}
+
+	// 		$.ajax({
+	// 			// эджэксу говорим, что необходимо сделать с данными получить или отправить, в данном сдучае идет отправка на почту. Затем указываем кто будет обрабатывать запрос
+	// 			type: "POST",
+	// 			url: "/mailer/smart.php",
+	// 			// говорим что перед отправкой файла, сервер должен его обработать
+	// 			data: $(this).serialize(),
+				
+	// 		}).done(function(dat) {
+	// 			// очищаем все инпуты после отправки формы
+	// 			$(this).find("input").val("");
+	// 			$('#consultation, #order').fadeOut();
+	// 			$('.overlayspl_autoload_register('PHPMailerAutoload');, #thanks').fadeIn('slow');
+
+	// 			// все формы после отправки должны очиститься
+	// 			$('form').trigger('reset');
+				
+	// 		});
+	// 		return false;
+	// 	});
+	// });
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+ 
+        if ($(this).valid()) {   
+ 
+            $.ajax({
+                type: "POST",
+                url: "mailer/smart.php",
+                data: $(this).serialize()
+            }).done(function() {
+                $(this).find("input").val("");
+                $('#consultation, #order').fadeOut();
+                $('.overlay, #thanks').fadeIn('fast');
+                $('form').trigger('reset');
+            });
+        }
+        return false;
+    });
+});
+
 
 // tiny-slider
 
