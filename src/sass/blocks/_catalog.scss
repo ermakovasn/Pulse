@@ -146,9 +146,13 @@
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
+            ul {
+                padding-left: 5px;
+            }
             li {
                 position: relative;
                 font-weight: 300;
+                list-style-type: none;
                 font-size: 14px;
                 line-height: 21px;
                 color: #555555;

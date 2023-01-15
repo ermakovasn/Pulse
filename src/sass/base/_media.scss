@@ -95,11 +95,13 @@
 .catalog {
     width: auto;
     ul {
-        margin-top: 22px;
+        margin: 22px auto;
+        width: 90%;
         li {
             font-size: 9px;
-            width: 87px;
+            width: 220px;
             line-height: none;
+            list-style-type: none;
         }
     }
     &-item {

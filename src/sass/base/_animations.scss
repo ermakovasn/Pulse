@@ -1,0 +1,13 @@
+@keyframes heartbeat {
+    // создаем бьющееся сердце
+    from {
+        // изначально масштаб будет равен 100%
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,3 +1,31 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -238,6 +266,14 @@
 .advantages__descr a {
   color: #FF0000;
   text-decoration: underline;
+}
+.advantages__icon_animated {
+  -webkit-animation: heartbeat 1.5s ease infinite;
+          animation: heartbeat 1.5s ease infinite;
+}
+.advantages__icon_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .consultation {
@@ -504,9 +540,13 @@
           transform: translateX(-100%);
   margin-left: 0px;
 }
+.catalog-item__list ul {
+  padding-left: 5px;
+}
 .catalog-item__list li {
   position: relative;
   font-weight: 300;
+  list-style-type: none;
   font-size: 14px;
   line-height: 21px;
   color: #555555;
@@ -832,8 +872,9 @@
   }
   .catalog ul li {
     font-size: 9px;
-    width: 87px;
+    width: 220px;
     line-height: none;
+    list-style-type: none;
   }
   .catalog-item {
     margin: 5px auto;
